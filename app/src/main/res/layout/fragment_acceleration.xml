@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.accelerator.AccelerationFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:orientation="vertical">
+
+        <!-- TODO: Update blank fragment layout -->
+        <RadioGroup
+            android:id="@+id/group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <RadioButton
+                android:id="@+id/x"
+                android:layout_width="111dp"
+                android:layout_height="53dp"
+                android:layout_gravity="top"
+                android:text="X" />
+
+            <RadioButton
+                android:id="@+id/y"
+                android:layout_width="151dp"
+                android:layout_height="48dp"
+                android:text="Y" />
+
+            <RadioButton
+                android:id="@+id/z"
+                android:layout_width="143dp"
+                android:layout_height="53dp"
+                android:text="Z" />
+
+
+        </RadioGroup>
+
+        <com.github.mikephil.charting.charts.LineChart
+            android:id="@+id/chart"
+            android:layout_width="match_parent"
+            android:layout_height="539dp">
+
+        </com.github.mikephil.charting.charts.LineChart>
+    </LinearLayout>
+</FrameLayout>
